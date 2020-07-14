@@ -1,10 +1,13 @@
 <template lang="html">
   <nav>
+     <img id="left-corner" src="../assets/images/corner.jpg" alt="Image not found">
+     <img id="right-corner" src="../assets/images/corner.jpg" alt="Image not found">
      <div id="logo-container">
-        <h1 id="logo">Kailak</h1>
+        <h1 id="logo">Kaliak</h1>
+        <img id="separator" src="../assets/images/decorative-separator.png" alt="image not found">
      </div>
      <ul id="nav-list">
-        <li class="nav-li"><a href="#">About</a></li>
+        <li class="nav-li"><a href="#">Home</a></li>
         <li class="nav-li"><a href="#">Shop</a></li>
         <li class="nav-li"><a href="#">Contact</a></li>
      </ul>
@@ -19,11 +22,26 @@ export default {}
    nav {
       width: 100%;
       height: auto;
+      padding-bottom: 10px;
       background-color: white;
-      border-bottom: 1px solid black;
+      /* border-bottom: 1px solid black; */
       position: relative;
    }
 
+   #left-corner {
+      position: absolute;
+      top: 10px;
+      left: 10px;;
+      height: 130px;
+   }
+
+   #right-corner {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      height: 130px;
+      transform: rotate(90deg);
+   }
 
    /*******************************
       LOGO & LOGO CONTAINER
@@ -41,10 +59,20 @@ export default {}
       text-align: center;
    }
 
+   #separator {
+      width: 250px;
+      height: auto;
+      margin-top: 40px;
+   }
+
    #logo {
       font-family: 'Great Vibes';
-      font-size: 3.5em;
+      font-size: 3em;
       display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
    }
 
    /*******************************
@@ -72,14 +100,20 @@ export default {}
    }
 
    a {
+      transition: all .4s;
      text-transform: uppercase;
      text-decoration: none;
      letter-spacing: 0.15em;
      display: inline-block;
      padding: 15px 20px;
+     padding-bottom: 5px;
      position: relative;
      color: black;
-     margin-top: 100px;
+     margin-top: 110px;
+   }
+
+   a:hover {
+      color: #b30000;
    }
 
    a:after {
