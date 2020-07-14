@@ -1,7 +1,7 @@
 <template lang="html">
   <nav>
-     <img id="left-corner" src="../assets/images/corner.jpg" alt="Image not found">
-     <img id="right-corner" src="../assets/images/corner.jpg" alt="Image not found">
+     <!-- <img id="left-corner" src="../assets/images/corner.jpg" alt="Image not found">
+     <img id="right-corner" src="../assets/images/corner.jpg" alt="Image not found"> -->
      <div id="logo-container">
         <h1 id="logo">Kaliak</h1>
         <img id="separator" src="../assets/images/decorative-separator.png" alt="image not found">
