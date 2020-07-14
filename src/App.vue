@@ -1,27 +1,25 @@
 <template>
   <div id="app">
-    <Homepage msg="Welcome to Your Vue.js App" />
+   <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Homepage from "./components/Homepage.vue";
 
 export default {
   name: "App",
-  components: {
-    Homepage
-  }
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="css">
+/* importing global fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Great+Vibes&display=swap');
+
+/* some global styles */
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
 }
 </style>
